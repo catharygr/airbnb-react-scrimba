@@ -7,10 +7,10 @@ function App() {
   
 
   return (
-    <main>
+    <>
       <Navegacion />
 
-    </main>
+    </>
   )
 }
 

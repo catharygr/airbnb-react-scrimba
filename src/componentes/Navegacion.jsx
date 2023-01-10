@@ -1,10 +1,11 @@
 import React from 'react'
-import logoAirbnb from '../images/airbnb-logo.png'
+import logoAirbnb from '../images/airbnb.svg'
+
 
 export default function Navegacion() {
   return(
-    <div>
-      <img src={logoAirbnb} alt='Logo de airbnb' />
-    </div>
+    <nav>
+      <img className='nav--logo' src={logoAirbnb} alt='Logo de airbnb' />
+    </nav>
   )
 }

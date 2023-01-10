@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  
+  font-family: 'Poppins', sans-serif;
+}
 
 
 nav {
@@ -12,12 +16,53 @@ nav {
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
 }
 
+.bold {
+  font-weight: bold;
+}
 
+.gray {
+  color:  #918E9B;
+}
 
 .nav--logo {
-  
-  max-width: 100px;
+  max-width: 100px; 
+}
 
- 
-  
+.hero {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.hero--foto {
+  width: 500px;
+  align-self: center;
+}
+
+.hero--header {
+  margin-bottom: 16px;
+}
+
+.hero--texto {
+  margin-top: 0;
+}
+
+.tarjeta {
+ width: 175px;
+ font-size: 12px;
+}
+
+.tarjeta--imagen {
+  width: 100%;
+  border-radius: 14px;
+}
+
+.tarjeta--estrellas {
+  display: flex;
+  align-items: center;
+
+}
+
+.tarjeta--estrella {
+  height: 14px;
 }

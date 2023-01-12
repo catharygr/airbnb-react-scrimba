@@ -1,30 +1,28 @@
-
-import React from 'react'
+import React from "react"
+import Navegacion from "./components/Navegacion"
+import Hero from "./components/Hero"
+import Tarjeta from "./components/Tarjeta"
+import data from "./data"
 import './App.css'
-import Hero from './componentes/Hero'
-import Navegacion from './componentes/Navegacion'
-import Tarjeta from './componentes/Tarjeta'
 
-function App() {
-  
-
-  return (
-      // <Hero />
-    <>
-      <Navegacion />
-      <Tarjeta 
-        rating= "5.0"
-        reviewCount={6}
-        country="USA"
-        title="Lecciones de vida con Katie Zaferes"
-        price={136}
-        
-      
-      />
-
-    </>
-  )
+export default function App() {
+    const tarjetas = data.map(item => {
+        return (
+            <Tarjeta
+                key={item.id}
+                {...item}
+                
+            />
+        )
+    })        
+    
+    return (
+        <div>
+            <Navegacion />
+            <Hero />
+            <section className="cards-list">
+                {tarjetas}
+            </section>
+        </div>
+    )
 }
-
-export default App
-
